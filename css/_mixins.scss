@@ -1,0 +1,51 @@
+/* Frontiers Mixins */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin img-desat($unit) {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%); 
+	opacity: $unit / 2 ;
+	filter: alpha(opacity=$unit * 50 );
+	filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+}
+
+// Must include the end suffix -deg to value, e.g. - 45deg
+@mixin rotate($degrees) {
+	transform: rotate(($degrees + 10deg) * -1) !important;
+	transform-origin:50% 50% !important;
+	-ms-transform: rotate(($degrees + 10deg) * -1) !important; /* IE 9 */
+	-ms-transform-origin:50% 50% !important; /* IE 9 */
+	-webkit-transform: rotate(($degrees + 10deg) * -1) !important; /* Chrome, Safari, Opera */
+	-webkit-transform-origin:50% 50% !important; /* Chrome, Safari, Opera */
+}
+
+// Must include the end suffix -s to value, e.g. 0.5s or 1s
+@mixin transition($time){
+	transition: all ($time) ease;
+	-moz-transition: all ($time) ease;
+	-o-transition: all ($time) ease;
+	-webkit-transition: all ($time) ease;
+}
+
+// Opacity 
+@mixin opacity($percent) {
+	opacity: $percent / 100 !important;
+    filter: alpha(opacity=$percent) !important; /* For IE8 and earlier */
+}
+
+// Brightness 
+@mixin contrast($percent) {
+	filter: contrast($percent/100) !important;
+	-webkit-filter: contrast($percent/100) !important;
+	-moz-filter: contrast($percent/100) !important;
+	-o-filter: contrast($percent/100) !important;
+	-ms-filter: contrast($percent/100) !important;
+}

@@ -1,0 +1,40 @@
+/* FONTS for Frontier Pages
+ * -------------------------- */
+
+/* Path for Fonts */
+$fr-font-path: "../fonts";
+
+/* Avenir Font */
+@font-face {
+  font-family: 'Avenir';
+  src: url('#{$fr-font-path}/Avenir.ttc');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {font-family: 'AvenirLTStd-Book';src: url('#{$fr-font-path}/2B3FE4_0_0.eot');src: url('#{$fr-font-path}/2B3FE4_0_0.eot?#iefix') format('embedded-opentype'),url('#{$fr-font-path}/2B3FE4_0_0.woff') format('woff'),url('#{$fr-font-path}/2B3FE4_0_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-MediumOblique';src: url('#{$fr-font-path}/2B3FE4_1_0.eot');src: url('#{$fr-font-path}/2B3FE4_1_0.eot?#iefix') format('embedded-opentype'),url('#{$fr-font-path}/2B3FE4_1_0.woff') format('woff'),url('#{$fr-font-path}/2B3FE4_1_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-BookOblique';src: url('#{$fr-font-path}/2B3FE4_2_0.eot');src: url('#{$fr-font-path}/2B3FE4_2_0.eot?#iefix') format('embedded-opentype'),url('#{$fr-font-path}/2B3FE4_2_0.woff') format('woff'),url('#{$fr-font-path}/2B3FE4_2_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-Medium';src: url('#{$fr-font-path}/2B3FE4_3_0.eot');src: url('#{$fr-font-path}/2B3FE4_3_0.eot?#iefix') format('embedded-opentype'),url('#{$fr-font-path}/2B3FE4_3_0.woff') format('woff'),url('#{$fr-font-path}/2B3FE4_3_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-BlackOblique';src: url('#{$fr-font-path}/2B3FE4_4_0.eot');src: url('#{$fr-font-path}/2B3FE4_4_0.eot?#iefix') format('embedded-opentype'),url('#{$fr-font-path}/2B3FE4_4_0.woff') format('woff'),url('#{$fr-font-path}/2B3FE4_4_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-Black';src: url('#{$fr-font-path}/2B3FE4_5_0.eot');src: url('#{$fr-font-path}/2B3FE4_5_0.eot?#iefix') format('embedded-opentype'),url('#{$fr-font-path}/2B3FE4_5_0.woff') format('woff'),url('#{$fr-font-path}/2B3FE4_5_0.ttf') format('truetype');}
+
+/* Komika Font */
+@font-face { 
+  font-family: 'KomikaAxis';
+  src: url('#{$fr-font-path}/KomikaAx.woff}') format('woff');
+  src: url('#{$fr-font-path}/komikax_-webfont.eot') format('embedded-opentype'),
+  //url('#{$fr-font-path}/komikax_-webfont.woff') format('woff'),
+  url('#{$fr-font-path}/komikax_-webfont.ttf') format('truetype'),
+  url('#{$fr-font-path}/komikax_-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* MercuryDisplay Font */
+
+/* MercuryTextG1 Font */
+@font-face {
+  font-family: MercuryTextG1-BoldItalic;
+  src: url('#{$fr-font-path}/MercuryTextG1-BoldItalic.otf}') format('otf');
+}
