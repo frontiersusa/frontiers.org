@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" style="height:100%;">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Meta Info for Frontiers -->
     <title>Frontiers</title>
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Frontiers CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
 
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/libs/animate.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,12 +23,12 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-   <script type="text/javascript">
-    function changeBackground(node,images)
-      {
-        node.style.backgroundImage = "url(\""+images[Math.floor(Math.random()*images.length)]+"\")";
+    <script type="text/javascript">
+      function changeBackground(node, images) {
+        node.style.backgroundImage =
+          'url("' + images[Math.floor(Math.random() * images.length)] + '")';
       }
-    var imgArray = new Array();
+      var imgArray = new Array();
       imgArray[0] = "img/landingpage1.jpg";
       imgArray[1] = "img/landingpage2.jpg";
       imgArray[2] = "img/landingpage3.jpg";
@@ -38,92 +38,272 @@
       imgArray[6] = "img/landingpage7.jpg";
       imgArray[7] = "img/landingpage8.jpg";
       imgArray[8] = "img/landingpage9.jpg";
-    </script><!-- Random background Script-->
+    </script>
+    <!-- Random background Script-->
   </head>
 
   <body id="fr-landing" style="height:100%;">
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-    ga('create', 'UA-22377821-2', 'auto');
-    ga('send', 'pageview');
-
-  </script>
+      ga("create", "UA-22377821-2", "auto");
+      ga("send", "pageview");
+    </script>
 
     <div class="fr-landing-bg animated fadeIn" id="frgb">
       <div class="container container-fr-landing text-center">
         <div class="fr-logo">
-          <img src="img/frontiers-logo.svg">
+          <img src="img/frontiers-logo.svg" />
         </div>
         <div class="subtitle">
           With love and respect, inviting all Muslim peoples to follow Jesus
         </div>
         <div class="panel-group natoffice-panel" id="accordion">
           <div class="panel panel-default">
-              <div class="panel-heading">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="">
-                  <h4 class="panel-title officetoggle ">
-                    Select a National office
-                     <i class="fa fa-chevron-up fa-toggle transition-short"></i>
-                  </h4>
-                </a>
+            <div class="panel-heading">
+              <a
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapseOne"
+                class=""
+              >
+                <h4 class="panel-title officetoggle ">
+                  Select a National office
+                  <i class="fa fa-chevron-up fa-toggle transition-short"></i>
+                </h4>
+              </a>
+            </div>
+            <div
+              id="collapseOne"
+              class="panel-collapse collapse"
+              style="height: auto;"
+            >
+              <div class="panel-body">
+                <ul class="country-list">
+                  <li>
+                    <a
+                      href="https://fronterasiberoamerica.org/"
+                      title="Frontiers Argentina"
+                      >Argentina</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://fronterasiberoamerica.org/"
+                      title="Frontiers Bolivia"
+                      >Bolivia</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.frontiers.org.br"
+                      title="Frontiers Brazil"
+                      >Brazil</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://frontierscanada.ca" title="Frontiers Canada"
+                      >Canada</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://fronterasiberoamerica.org"
+                      title="Frontiers Chile"
+                      >Chile</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://fronterasiberoamerica.org/"
+                      title="Frontiers Latin Office"
+                      >Colombia</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://fronterasiberoamerica.org/"
+                      title="Frontiers Latin Office"
+                      >Costa Rica</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.frontiers.no/" title="Frontiers Nordic"
+                      >Denmark</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.fronterasiberoamerica.org"
+                      title="Frontiers El Salvador"
+                      >El Salvador</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.frontiers.fi" title="Frontiers Nordic"
+                      >Finland</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.frontiers.fr" title="Frontiers France"
+                      >France</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.frontiers.de" title="Frontiers Germany"
+                      >Germany</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.frontiers.org.uk"
+                      title="Frontiers Great Britain"
+                      >Great Britain</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://fronterasiberoamerica.org/"
+                      title="Frontiers Latin Office"
+                      >Guatemala</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://fronterasiberoamerica.org/"
+                      title="Frontiers Latin Office"
+                      >Honduras</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.frontiers.org.hk"
+                      title="Frontiers Hong Kong"
+                      >Hong Kong</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.frontiers.no/" title="Frontiers Nordic"
+                      >Iceland</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.frontiersireland.org"
+                      title="Frontiers Ireland"
+                      >Ireland</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.i68.it" title="Frontiers Italy"
+                      >Italy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.frontiers.or.kr" title="Frontiers Korea"
+                      >Korea</a
+                    >
+                  </li>
+                  <!-- <li><a href="http://www.fronterasmexico.org" title="Frontiers Mexico">Mexico</a></li> -->
+                  <li>
+                    <a
+                      href="http://www.frontiers.nl"
+                      title="Frontiers Netherlands"
+                      >Netherlands</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.frontiersnz.org/"
+                      title="Frontiers New Zealand"
+                      >New Zealand</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.frontiers.no/" title="Frontiers Nordic"
+                      >Norway</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.paam.global/" title="PAAM Global"
+                      >Panama</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.frontiers.ro" title="Frontiers Romania"
+                      >Romania</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.frontiers.org.za"
+                      title="Frontiers South Africa"
+                      >South Africa</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.frontiers.se" title="Frontiers Nordic"
+                      >Sweden</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.frontiers.ch"
+                      title="Frontiers Switzerland"
+                      >Switzerland</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.frontiers.org.tw/"
+                      title="Frontiers Taiwan"
+                      >Taiwan</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://frontiersusa.org" title="Frontiers USA"
+                      >United States</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div id="collapseOne" class="panel-collapse collapse" style="height: auto;">
-                  <div class="panel-body">
-                    <ul class="country-list">
-                      <li><a href="https://fronterasiberoamerica.org/" title="Frontiers Argentina">Argentina</a></li>
-                      <li><a href="https://fronterasiberoamerica.org/" title="Frontiers Bolivia">Bolivia</a></li>
-                      <li><a href="http://www.frontiers.org.br" title="Frontiers Brazil">Brazil</a></li>
-                      <li><a href="http://frontierscanada.ca" title="Frontiers Canada">Canada</a></li>
-                      <li><a href="http://fronterasiberoamerica.org" title="Frontiers Chile">Chile</a></li>
-                      <li><a href="https://fronterasiberoamerica.org/" title="Frontiers Latin Office">Colombia</a></li>
-                      <li><a href="https://fronterasiberoamerica.org/" title="Frontiers Latin Office">Costa Rica</a></li>
-                      <li><a href="http://www.frontiers.no/" title="Frontiers Nordic">Denmark</a></li>
-                      <li><a href="http://www.fronterasiberoamerica.org" title="Frontiers El Salvador">El Salvador</a></li>
-                      <li><a href="http://www.frontiers.fi" title="Frontiers Nordic">Finland</a></li>
-                      <li><a href="http://www.frontiers.fr" title="Frontiers France">France</a></li>
-                      <li><a href="http://www.frontiers.de" title="Frontiers Germany">Germany</a></li>
-                      <li><a href="http://www.frontiers.org.uk" title="Frontiers Great Britain">Great Britain</a></li>
-                      <li><a href="https://fronterasiberoamerica.org/" title="Frontiers Latin Office">Guatemala</a></li>
-                      <li><a href="https://fronterasiberoamerica.org/" title="Frontiers Latin Office">Honduras</a></li>
-                      <li><a href="http://www.frontiers.org.hk" title="Frontiers Hong Kong">Hong Kong</a></li>
-                      <li><a href="http://www.frontiers.no/" title="Frontiers Nordic">Iceland</a></li>
-                      <li><a href="http://www.frontiersireland.org" title="Frontiers Ireland">Ireland</a></li>
-                      <li><a href="http://www.i68.it" title="Frontiers Italy">Italy</a></li>
-                      <li><a href="http://www.frontiers.or.kr" title="Frontiers Korea">Korea</a></li>
-                      <!-- <li><a href="http://www.fronterasmexico.org" title="Frontiers Mexico">Mexico</a></li> -->
-                      <li><a href="http://www.frontiers.nl" title="Frontiers Netherlands">Netherlands</a></li>
-                      <!--<li><a href="http://www.frontiersnz.org/" title="Frontiers New Zealand">New Zealand</a></li> -->
-                      <li><a href="http://www.frontiers.no/" title="Frontiers Nordic">Norway</a></li>
-                      <li><a href="https://www.paam.global/" title="PAAM Global">Panama</a></li>
-                      <li><a href="http://www.frontiers.ro" title="Frontiers Romania">Romania</a></li>
-                      <li><a href="http://www.frontiers.org.za" title="Frontiers South Africa">South Africa</a></li>
-                      <li><a href="http://www.frontiers.se" title="Frontiers Nordic">Sweden</a></li>
-                      <li><a href="http://www.frontiers.ch" title="Frontiers Switzerland">Switzerland</a></li>
-                      <li><a href="http://www.frontiers.org.tw/" title="Frontiers Taiwan">Taiwan</a></li>
-                      <li><a href="http://frontiersusa.org" title="Frontiers USA">United States</a></li>
-                    </ul>
-                  </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
   <script type="text/javascript">
     /* Change background image */
-    changeBackground(document.getElementById("frgb"),imgArray);
+    changeBackground(document.getElementById("frgb"), imgArray);
 
     /* toggle View Activity arrow on uncollapse */
     $(".officetoggle").click(function() {
-      $(this).children('i').toggleClass("fa-rotate-180");
+      $(this)
+        .children("i")
+        .toggleClass("fa-rotate-180");
     });
   </script>
 </html>
